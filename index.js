@@ -13,7 +13,7 @@ const moviesRoute = require('./routes/movieRoutes');
 db();
 
 const corsOptions = {
-  origin: "https://mmabyalihamza.netlify.app",
+  origin: true,
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
@@ -21,6 +21,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.options("*", cors(corsOptions));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
