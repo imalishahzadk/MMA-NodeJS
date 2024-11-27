@@ -1,7 +1,7 @@
 {
-  "name": "mba",
+  "name": "mma",
   "version": "1.0.0",
-  "description": "mba rest api",
+  "description": "mma rest api",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
